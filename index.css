@@ -1,0 +1,199 @@
+.a {
+    text-align: right;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1E90FF;
+    margin: 4px 5px;
+    }
+
+.b {
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #536373;
+    margin: 4px 5px;
+    }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #004d40;
+}
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #004d40;
+    width: 300px;
+    background-color: #ffffff;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #004d40;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #004d40;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #004d40;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00332c;
+}
+
+/* Landscape styling */
+
+.sun {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 100px;
+    height: 100px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.5);
+}
+
+.river {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, #1E90FF, #00BFFF);
+    z-index: -1;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boat {
+    position: absolute;
+    bottom: 10px; /* Adjust to place boat on river */
+    left: 30%;
+    width: 50px;
+    height: 20px;
+    background-color: #8B4513; /* Brown color for the boat body */
+    border-radius: 0 0 10px 10px; /* Rounded bottom edges for the boat */
+    transform: translateX(-50%); /* Center the boat horizontally */
+}
+
+.boat:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 30px;
+    height: 10px;
+    background-color: #ffffff; /* Golden color for the boat sail */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Triangle shape for the sail */
+    transform: translateX(-50%);
+}
+
+.hot-air-balloon {
+    position: absolute;
+    top: 150px; /* Distance from top */
+    left: 75px; /* Distance from left */
+}
+
+.balloon {
+    position: relative;
+    width: 40px; /* Maximum width */
+    height: 40px; /* Adjusted for proportion */
+    background: radial-gradient(#FF6347, #FF4500); /* Gradient for the balloon */
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; /* Elliptical shape for the balloon */
+    border: 1px solid #000; /* Black border for the balloon */
+    overflow: hidden;
+}
+
+.stripes {
+    width: 100%;
+    height: 6px; /* Stripe height */
+    background-color: #FFFFFF; /* White color for the stripes */
+    position: absolute;
+}
+
+.stripes:nth-child(1) {
+    top: 5px; /* Position of first stripe */
+}
+
+.stripes:nth-child(2) {
+    top: 15px; /* Position of second stripe */
+}
+
+.stripes:nth-child(3) {
+    top: 25px; /* Position of third stripe */
+}
+
+.flame {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #FF4500; /* Flame color */
+    border-radius: 50%; /* Rounded shape for the flame */
+    animation: flicker 1s infinite alternate; /* Flickering animation for the flame */
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.basket {
+    position: relative;
+    width: 30px; /* Adjusted for proportion */
+    height: 10px; /* Adjusted for proportion */
+    background-color: #8B4513; /* Brown color for the basket */
+    border-radius: 3px; /* Rounded corners for the basket */
+    border: 1px solid #000; /* Black border for the basket */
+}
+
+.sandbags {
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #8B4513; /* Brown color for the sandbags */
+    border-radius: 2px; /* Rounded corners for the sandbags */
+    border: 1px solid #000; /* Black border for the sandbags */
+}
+
+.sandbags:nth-child(1) {
+    left: 5px;
+}
+
+.sandbags:nth-child(2) {
+    left: 15px;
+}
+
+.sandbags:nth-child(3) {
+    left: 25px;
+}
